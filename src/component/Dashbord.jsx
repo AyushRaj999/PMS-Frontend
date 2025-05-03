@@ -15,7 +15,7 @@ const Dashboard = () => {
     const fetchVender = async () => {
       try {
         const res = await axios.get(
-          "https://product-management-system-mjfo.onrender.com/api/addNewVender"
+          "https://pms-backend-864f.onrender.com/api/addNewVender"
         );
         console.log(res.data.message.length);
     setVenderCount(res.data.message.length);
@@ -27,7 +27,7 @@ const Dashboard = () => {
      const fetchAllProduct = async () => {
        try {
          const response = await axios.get(
-           "https://product-management-system-mjfo.onrender.com/api/product/api/getProduct"
+           "https://pms-backend-864f.onrender.com/api/product/api/getProduct"
          );
          console.log(response.data.message.length);
     setAllProductCount(response.data.message.length);
@@ -38,7 +38,7 @@ const Dashboard = () => {
        const fetchSellData = async () => {
          try {
            const response = await axios.get(
-             "https://product-management-system-mjfo.onrender.com/api/sell/api/getsellitem"
+             "https://pms-backend-864f.onrender.com/api/sell/api/getsellitem"
            );
               setAllSellCount(response.data.message.length);
          } catch (error) {

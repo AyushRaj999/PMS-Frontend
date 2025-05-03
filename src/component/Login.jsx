@@ -25,7 +25,7 @@ function Login() {
 
       // ✅ Proper Axios request
       const res = await axios.post(
-        "https://product-management-system-mjfo.onrender.com/signup/getLogin",
+        "https://pms-backend-864f.onrender.com/signup/getLogin",
         loginData
       );
       const data = res.data; // Axios automatically parses JSON

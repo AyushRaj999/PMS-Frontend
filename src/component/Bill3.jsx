@@ -57,7 +57,7 @@ const Bill3 = () => {
   const fetchProduct = async () => {
     try {
       const response = await axios.get(
-        "https://product-management-system-mjfo.onrender.com/api/product/api/getProduct"
+        "https://pms-backend-864f.onrender.com/api/product/api/getProduct"
       );
       setGetProduct(response.data.message);
     } catch (error) {
@@ -169,7 +169,7 @@ useEffect(() => {
     const fetchSellData = async () => {
       try {
         const response = await axios.get(
-          "https://product-management-system-mjfo.onrender.com/api/sell/api/getsellitem"
+          "https://pms-backend-864f.onrender.com/api/sell/api/getsellitem"
         );
         console.log(response.data.message);
         setGetSell(response.data.message);

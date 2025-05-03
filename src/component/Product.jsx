@@ -63,7 +63,7 @@ const Product = () => {
   const fetchVender = async () => {
     try {
       const res = await axios.get(
-        "https://product-management-system-mjfo.onrender.com/api/addNewVender"
+        "https://pms-backend-864f.onrender.com/api/addNewVender"
       );
       console.log(res.data.message);
       setAddvender(res.data.message);
@@ -89,7 +89,7 @@ const Product = () => {
     console.log("ProductDetails: ", ProductDetails);
     try {
       const res = await axios.post(
-        "https://product-management-system-mjfo.onrender.com/api/product/api/postProduct",
+        "https://pms-backend-864f.onrender.com/api/product/api/postProduct",
         ProductDetails
       );
       console.log(res.data);

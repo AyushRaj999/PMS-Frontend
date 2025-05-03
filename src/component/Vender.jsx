@@ -26,7 +26,7 @@ function Vender() {
     e.preventDefault();
     try {
       await axios.post(
-        "https://product-management-system-mjfo.onrender.com/api/addNewVender",
+        "https://pms-backend-864f.onrender.com/api/addNewVender",
         venderForm
       );
       setVenderDashboard(false);
@@ -44,7 +44,7 @@ function Vender() {
   const fetchVender = async () => {
     try {
       const res = await axios.get(
-        "https://product-management-system-mjfo.onrender.com/api/addNewVender"
+        "https://pms-backend-864f.onrender.com/api/addNewVender"
       );
       console.log(res.data.message.length)
       console.log(res.data.message)
@@ -63,7 +63,7 @@ function Vender() {
   //delete
   const handleDelete = async (id) => {
     await axios.delete(
-     ` https://product-management-system-mjfo.onrender.com/api/DeleteVender${id}`
+     ` https://pms-backend-864f.onrender.com/api/DeleteVender${id}`
     );
     fetchVender();
   };
@@ -146,7 +146,7 @@ function Vender() {
          console.log("ProductDetails11: ", venderForm);
          console.log("userid: ", currentId);
          const res = await axios.put(
-           ` https://product-management-system-mjfo.onrender.com/api/editvender/api/editVender/${currentId}`,
+           ` https://pms-backend-864f.onrender.com/api/editvender/api/editVender/${currentId}`,
            venderForm
          );
          console.log(res);

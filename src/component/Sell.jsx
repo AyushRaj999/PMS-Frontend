@@ -29,7 +29,7 @@ const Sell = () => {
   const fetchProduct = async () => {
     try {
       const response = await axios.get(
-        "https://product-management-system-mjfo.onrender.com/api/product/api/getProduct"
+        "https://pms-backend-864f.onrender.com/api/product/api/getProduct"
       );
       setGetProduct(response.data.message);
     } catch (error) {
@@ -80,7 +80,7 @@ const Sell = () => {
     console.log(sellForm)
     try{
       const res = await axios.post(
-        "https://product-management-system-mjfo.onrender.com/api/sell/api/sellitem",
+        "https://pms-backend-864f.onrender.com/api/sell/api/sellitem",
         sellForm
       );
       console.log(res)
